@@ -1,0 +1,35 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  min-height: 99%;
+  box-shadow: -2px 2px 42px -8px rgba(0, 0, 0, 0.31);
+  .one {
+    margin-top: 1rem;
+    .col-6:nth-child(2) {
+      border-left: 1px solid rgba(0, 0, 0, 0.31);
+    }
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      margin-bottom: 10px;
+      span {
+        &:first-child {
+          padding-left: 10px;
+          padding-right: 10px;
+          background: #3b88ae;
+          color: white;
+        }
+      }
+    }
+  }
+
+  ::ng-deep {
+    fa-icon {
+      color: #3b88ae;
+    }
+  }
+}

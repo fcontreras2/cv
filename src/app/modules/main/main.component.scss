@@ -1,0 +1,36 @@
+@import "./src/styles";
+@import "~animate.css/source/_base.css";
+@import "~animate.css/source/fading_entrances/fadeInUp.css";
+
+.content {
+  height: 100vh;
+  max-height: 100vh;
+  .col-5 {
+    height: 90%;
+  }
+  .col-7 {
+    height: 90%;
+    position: relative;
+    ::ng-deep {
+      color: rgb(100, 100, 100);
+      h2 {
+        color: $gray-color;
+        font-family: $font-regular;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 0rem;
+        padding-right: 1rem;
+        margin: 0;
+        width: 100%;
+      }
+      .divider {
+        height: 1px;
+        display: block;
+        background-color: rgba($color: $gray-color, $alpha: 0.3);
+      }
+      .section {
+        opacity: 0;
+      }
+    }
+  }
+}

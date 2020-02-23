@@ -1,0 +1,20 @@
+<div class="row">
+  <div
+    class="col-2 nav d-flex flex-column  justify-content-center align-items-center p-0 pt-3 pb-3"
+  >
+    <a
+      *ngFor="let router of routes"
+      routerLink="{{ router.link }}"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <fa-icon [icon]="router.icon"></fa-icon>
+    </a>
+  </div>
+  <div
+    class="col p-0 profile d-flex flex-column justify-content-end align-items-center w-100 pb-5"
+  >
+    <h1 class="profile__name text-animate m-0 mb-3">Freddy Contreras</h1>
+    <h3 class="profile__subtitle text-animate m-0 mb-3">Frontend Developer</h3>
+  </div>
+</div>

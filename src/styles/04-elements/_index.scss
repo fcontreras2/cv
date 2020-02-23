@@ -1,0 +1,83 @@
+/* ===========================
+  GLOBAL STYLES ELEMENTS
+=========================== */
+
+@import "../01-settings/index.scss";
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  outline: none;
+  font-display: auto;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: $html-font-size-lg;
+  line-height: 23px;
+
+  &{
+    @include media-breakpoint-only(xs) {
+      font-size: $html-font-size-xs;
+    } 
+    @include media-breakpoint-only(sm) {
+      font-size: $html-font-size-sm;
+    }
+    @include media-breakpoint-only(md) {
+      font-size: $html-font-size-md;
+    }
+    @include media-breakpoint-only(md) {
+      font-size: $html-font-size-lg;
+    }
+    @include media-breakpoint-only(lg) {
+      font-size: $html-font-size-xl;
+    }
+  }
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: $font-regular;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  background-position-y: 60%;
+  background-image: url('http://www.cvhldgs.com/wp-content/uploads/2017/03/bg.jpg');
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px white;
+  border-radius: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #dedede;
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #dedede;
+}

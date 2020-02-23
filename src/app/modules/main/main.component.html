@@ -1,0 +1,13 @@
+<section class="container">
+  <div class="row content justify-content-center align-items-center">
+    <app-nav class="col-5"></app-nav>
+    <div
+      class="col-7 p-0"
+      [ngStyle]="{'overflow': !activeRouter ? 'auto': 'hidden'}"
+      [@fadeAnimation]="checkChangePage(outlet)"
+      (scroll)="scroll()"
+    >
+      <router-outlet #outlet="outlet" (active)="change($event)" (deactivate)="change($event)"></router-outlet>
+    </div>
+  </div>
+</section>

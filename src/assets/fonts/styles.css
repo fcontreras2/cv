@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Poppins-Light";
+  src: /* Modern Browsers */ url("Poppins-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: /* Modern Browsers */ url("Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: /* Modern Browsers */ url("Poppins-SemiBold.ttf") format("truetype");
+}
